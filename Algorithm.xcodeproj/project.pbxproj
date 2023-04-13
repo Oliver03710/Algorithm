@@ -12,6 +12,7 @@
 		AD88A47229E81CB000120D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88A47129E81CB000120D94 /* ViewController.swift */; };
 		AD88A47729E81CB100120D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD88A47629E81CB100120D94 /* Assets.xcassets */; };
 		AD88A47A29E81CB100120D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88A47829E81CB100120D94 /* LaunchScreen.storyboard */; };
+		AD88A48329E81E4500120D94 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88A48229E81E4500120D94 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AD88A47629E81CB100120D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD88A47929E81CB100120D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD88A47B29E81CB100120D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD88A48229E81E4500120D94 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				AD88A46D29E81CB000120D94 /* AppDelegate.swift */,
 				AD88A46F29E81CB000120D94 /* SceneDelegate.swift */,
 				AD88A47129E81CB000120D94 /* ViewController.swift */,
+				AD88A48229E81E4500120D94 /* Stack.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD88A48329E81E4500120D94 /* Stack.swift in Sources */,
 				AD88A47229E81CB000120D94 /* ViewController.swift in Sources */,
 				AD88A46E29E81CB000120D94 /* AppDelegate.swift in Sources */,
 				AD88A47029E81CB000120D94 /* SceneDelegate.swift in Sources */,
