@@ -11,7 +11,7 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        testForStack()
+        testForLinkedList()
     }
     
     func testForStack() {
@@ -31,5 +31,29 @@ final class ViewController: UIViewController {
         stack.peak()!   // 4
         print(stack)    // [1, 2, 4]
     }
+    
+    func testForLinkedList() {
+        var linkedList = LinkedList<Int>(head: Node(value: 1, next: nil))
+        print(linkedList.head?.value)
+        print(linkedList.tail?.value)
+        
+        linkedList.append(Node(value: 10, next: nil))
+        print(linkedList.head?.value)
+        print(linkedList.tail?.value)
+        print(linkedList.size())
+        
+        print(linkedList.firstIndex(of: 1))
+        print(linkedList.findNode(at: 1)?.value)
+        linkedList.append(Node(value: 20, next: nil))
+        linkedList.append(Node(value: 40, next: nil))
+        linkedList.append(Node(value: 100, next: nil))
+        print(linkedList.size())
+        
+        linkedList.remove(at: 2)
+        print(linkedList.head?.value)
+        print(linkedList.tail?.value)
+        print(linkedList.size())
+    }
+
 }
 
