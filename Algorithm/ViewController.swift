@@ -34,25 +34,25 @@ final class ViewController: UIViewController {
     
     func testForLinkedList() {
         var linkedList = LinkedList<Int>(head: Node(value: 1, next: nil))
-        print(linkedList.head?.value)
-        print(linkedList.tail?.value)
+        print(linkedList.head?.value)   // 1
+        print(linkedList.tail?.value)   // 1
         
         linkedList.append(Node(value: 10, next: nil))
-        print(linkedList.head?.value)
-        print(linkedList.tail?.value)
-        print(linkedList.size())
+        print(linkedList.head?.value)   // 1
+        print(linkedList.tail?.value)   // 10
+        print(linkedList.size())        // 2
         
-        print(linkedList.firstIndex(of: 1))
-        print(linkedList.findNode(at: 1)?.value)
+        print(linkedList.firstIndex(of: 1))         // 0
+        print(linkedList.findNode(at: 1)?.value)    // 10
         linkedList.append(Node(value: 20, next: nil))
         linkedList.append(Node(value: 40, next: nil))
         linkedList.append(Node(value: 100, next: nil))
-        print(linkedList.size())
+        print(linkedList.size())    // 5
         
         linkedList.remove(at: 2)
-        print(linkedList.head?.value)
-        print(linkedList.tail?.value)
-        print(linkedList.size())
+        print(linkedList.head?.value)   // 1
+        print(linkedList.tail?.value)   // 100
+        print(linkedList.size())        // 4
     }
 
 }
