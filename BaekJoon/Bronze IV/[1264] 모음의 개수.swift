@@ -1,12 +1,9 @@
-var x = Int(readLine()!)!
-let n = Int(readLine()!)!
-
-for _ in 0..<n {
-    let input = readLine()!.split(separator: " ").map { Int($0)! }
-    let a = input[0]
-    let b = input[1]
+let vowels = ["a", "e", "i", "o", "u"]
+while true {
+    let input = readLine()!
     
-    x -= a * b
+    guard input != "#" else { break }
+    
+    let filtered = input.lowercased().filter { vowels.contains(String($0)) }
+    print(filtered.count)
 }
-
-print(x == 0 ? "Yes" : "No")
